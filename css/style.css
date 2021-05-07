@@ -584,7 +584,7 @@ footer .copyright{
     }
     .containe{
         width: 750px;
-        padding: 0 15px;
+        padding: 0 10px;
         margin: 0 auto;
     }
     .headerimg img{
@@ -675,6 +675,7 @@ footer .copyright{
 @media (min-width: 481px) and (max-width: 767px) {
     .containe{
         width: 470px;
+        padding: 0 10px;
     }
     .hamberger{
         display: block;
@@ -778,7 +779,8 @@ footer .copyright{
         display: block;
     }
     .containe{
-        width: 275px;
+        width: 350px;
+        padding: 0;
     }
     .mobile-nav-logo{
         display: block;
@@ -856,7 +858,9 @@ footer .copyright{
     footer {
         padding: 2rem 0.5rem;
     }
-    
+    .copyright{
+        font-size: 0.9rem;
+    }
 
   }
 
@@ -870,6 +874,7 @@ footer .copyright{
     }
     .containe{
         width: 275px;
+        padding: 0 10px;
     }
     .mobile-nav-logo{
         display: block;
