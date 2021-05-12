@@ -29,26 +29,27 @@
 }
 
 .button-primary{
-    background: var(--primary);
-    color: var(--secendory);
+    background: white;
+    color: var(--primary);
     transition: all .3s ease;
 }
 
 .button-primary:hover{
     background: transparent;
-    border-color: var(--primary);
-    color: var(--primary);
+    border-color: white;
+    color: white;
 }
 
 .button-secondary{
-    background: #6A0A09;
+    /* background: #6A0A09; */
+    background: #009900;
     color: white;
     transition: all .3s ease;
 }
 
 .button-secondary:hover{
     background: transparent;
-    border-color: #6A0A09;
+    border-color: #009900;
     color: white;
     /* cursor: pointer; */
 }

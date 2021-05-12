@@ -4,7 +4,7 @@
     /* --primary:lawngreen; */
     /* --primary:cornflowerblue; */
     /* --primary:chartreuse; */
-    --primary:#FFA995;
+    --primary:#fe2712;
     /* --primary:crimson; */
     /* --primary:gold; */
     --dark:#161616;
@@ -13,6 +13,9 @@
     --light:#F2F2F2;
     --secondary:#070606
 }
+body::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+  }
 
 html{
     scroll-behavior: smooth;
@@ -61,7 +64,7 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    filter: brightness(70%);
+    filter: brightness(90%);
 }
 
 .headerimg img{
@@ -203,31 +206,55 @@ header nav .branding img{
     left: 0;
 } */
 
+.overallfreelancerdiv{
+    display: flex;
+}
 
-section.freelancer{
+.freelancerdesign{
+    width: 80%;
+    height: 320px;
+    background: #fe2712;
+    color: var(--pure);
+    /* text-align: center; */
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.designeddiv{
     text-align: center;
     /* background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/free-lancer-background.jpg); */
-    background: #FFA995;
+    background: #fe2712;
     /* background-repeat: no-repeat; */
     color: var(--pure);
     padding-top: 4rem;
     padding-bottom: 4rem;
+    /* border-radius: 0% 100% 16% 84% / 100% 62% 38% 0% ; */
+    border-radius: 0% 100% 61% 39% / 100% 62% 38% 0%  ;
+    margin-right: 15%;
     /* clip-path: polygon(); */
+    width: 25%;
+    margin-left: -2px;
 }
 
-section.freelancer h1{
+.freestyle{
+    margin-left: -25%;
+}
+
+.freestyle h1{
     font-size: 1.8rem;
-    color: black;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
-section.freelancer p{
-    color: darkslategray;
+.freestyle p{
+    color: gainsboro;
     margin-bottom: 2rem;
     font-family: 'Lato',sans-serif;
 }
 
-section.freelancer a{
+.freestyle a{
     color: inherit;
 }
 
@@ -319,22 +346,60 @@ section.whocandonate p{
 
 /* --------------------------------------------Save a Life--------------------------------------- */
 
-section.savelife{
+
+.overallsavelife{
     display: flex;
-    justify-content: center;
-    background-color: var(--primary);
-    margin-bottom: 5rem;
-    padding: 4rem 0;
 }
 
-.savelifediv{
+.savelifedesign{
+    width: 80%;
+    height: 320px;
+    background: #fe2712;
+    color: var(--pure);
+    /* text-align: center; */
+    padding: 4rem 0;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
+.designeddiv2{
+    text-align: center;
+    background: #fe2712;
+    color: var(--pure);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-radius: 100% 0% 39% 61% / 62% 100% 0% 38%  ;
+    margin-left: 15%;
+    width: 25%;
+    margin-right: -2px;
+}
+
+.savelifestyle{
+    margin-right: -25%;
+}
+
+.savelifestyle h1{
+    font-size: 1.8rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.savelifestyle p{
+    color: gainsboro;
+    margin-bottom: 2rem;
+    font-family: 'Lato',sans-serif;
+}
+
+.savelifestyle a{
+    color: inherit;
+}
+
 /* --------------------------------------------user contact-------------------------------------- */
+
+.contacthed{
+    margin-top: 5rem;
+}
 
 #usercontact{
     margin-bottom: 5rem;
@@ -374,8 +439,8 @@ section.savelife{
     margin: 8px 0;
     border-radius: 4px;
     cursor: pointer;
-    background: var(--primary);
-    color: var(--secendory);
+    background: #fe2712;
+    color: white;
     transition: all .3s ease;
     font-size: 1.1rem;
     font-weight: 600;
@@ -398,15 +463,42 @@ section.savelife{
 footer{
     /* background: var(--dark); */
     /* background: #450A0E; */
-    background: #6A0A09;
+    background: #fe2712;
     text-align: center;
     padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.footermaterial1{
+    display: flex;
+    flex-direction: column;
+}
+
+.footermaterial1 a{
+    color: gainsboro;
+    text-align: start;
+    text-decoration: none;
+}
+
+.footermaterial1 h3{
+    color: white;
+    text-align: start;
+}
+
+.footermaterial3 h3{
+    color: white;
+}
+
+.footer-socials{
+    margin-top: 2.2rem;
 }
 
 .footer-logo-div{
     color: white;
     height: 40px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.2rem;
 }
 
 
@@ -454,7 +546,23 @@ footer .copyright{
 }
 
 .mobile-nav-logo{
+    color: white;
+    position: relative;
+    /* top: 28px; */
+    top: 20px;
     display: none;
+}
+
+.mobile-nav-logoinside{
+    position: absolute;
+    top: 28px; 
+    display: none;
+    width: 60px;
+}
+
+.mobile-nav-logoinside img{
+    width: 100%;
+    height: 100%;
 }
 
 #mobileheader{
@@ -463,7 +571,7 @@ footer .copyright{
     z-index: 1;
     width: 100vh;
     height: 70px;
-    background-color: #6A0A09;
+    background-color: #fe2712;
 }
 
 .hamberger{
@@ -491,7 +599,7 @@ footer .copyright{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 10;
     background: var(--light);
     width: 100%;
     height: 100%;
@@ -577,6 +685,9 @@ footer .copyright{
         position: fixed;
         display: block;
     }
+    .mobile-nav-logoinside{
+        display: block;
+    }
     .container{
         width: 750px;
         padding: 0 15px;
@@ -601,6 +712,7 @@ footer .copyright{
     
     .mobile-nav-logo{
         display: block;
+        z-index: 10;
     }
     
     .hamberger{
@@ -627,8 +739,8 @@ footer .copyright{
     section {
         padding: 1rem 0;
     }
-    section.freelancer{
-        padding-bottom: 6rem;
+    section.overallsavelife{
+        padding-bottom: 5rem;
     }
 
     .skill-main-container{
@@ -654,22 +766,18 @@ footer .copyright{
     #usercontact{
         padding: 0 2rem;
     }
-
+    .freestyle{
+        margin-left: 8%;
+    }
+    .savelifestyle{
+        margin-right: 10%;
+    } 
+    footer{
+        padding: 0 1rem;
+        padding-top: 2rem;
     }
 
-/* @media (min-width:481px){
-    .container{
-        max-width: 460px;
     }
-} */
-
-
-
-/* @media (min-width:481px){
-    .container{
-        max-width: 460px;
-    }
-} */
 
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -682,6 +790,10 @@ footer .copyright{
         margin-right: 1rem;
     }
     .mobile-nav-logo{
+        display: block;
+        z-index: 10;
+    }
+    .mobile-nav-logoinside{
         display: block;
     }
     header #main-nav{
@@ -720,10 +832,10 @@ footer .copyright{
     .section-heading{
         line-height: 1rem;
     }
-    section.freelancer {
+    section.overallsavelife {
         padding-bottom: 6rem;
     }
-    section.freelancer p {
+    section.overallsavelife p {
         margin: 2rem 0.5rem;
     }
     
@@ -748,9 +860,48 @@ footer .copyright{
         grid-template-columns: repeat(1,1fr);
     }
 
+    .freestyle{
+        margin-left: 14%;
+    }
+    .savelifestyle{
+        margin-right: 10%;
+    } 
 
-
-
+    footer{
+        flex-direction: column;
+    }
+    
+    .footermaterial1{
+        align-items: center;
+    }
+    
+    .footermaterial2 {
+        order: 3;
+        margin-top: 0rem;
+    }
+    
+    .footermaterial3 {
+        margin-top: 2rem;
+    }
+    
+    .footer-socials{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo-div{
+        color: white;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    footer .footer-logo{
+        margin-bottom: 3rem;
+        height: 100%;
+    }
+    footer .footer-socials{
+        margin-bottom: 2rem;
+    }
 
   }
 
@@ -783,6 +934,10 @@ footer .copyright{
         padding: 0;
     }
     .mobile-nav-logo{
+        display: block;
+        z-index: 10;
+    }
+    .mobile-nav-logoinside{
         display: block;
     }
     .hamberger{
@@ -834,10 +989,10 @@ footer .copyright{
     .firstbuttons button{
         margin-top: 0.5rem;
     }
-    section.freelancer {
+    section.overallsavelife {
         padding-bottom: 5rem;
     }
-    section.freelancer p {
+    section.overallsavelife p {
         margin: 2rem 0.5rem;
     }
     section.contact .card-wrapper {
@@ -851,7 +1006,12 @@ footer .copyright{
     section.contact .card-wrapper .card{
         margin: 8px 0px;
     }
-    
+    .freestyle{
+        margin-left: 14%;
+    }
+    .savelifestyle{
+        margin-right: 10%;
+    }    
     section.contact .input-wrap {
         grid-template-columns: repeat(1,1fr);
     }
@@ -861,7 +1021,41 @@ footer .copyright{
     .copyright{
         font-size: 0.9rem;
     }
+    footer{
+        flex-direction: column;
+    }
+    
+    .footermaterial1{
+        align-items: center;
+    }
+    
+    .footermaterial2 {
+        order: 3;
+        margin-top: 0rem;
+    }
+    
+    .footermaterial3 {
+        margin-top: 2rem;
+    }
 
+    .footer-socials{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo-div{
+        color: white;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    footer .footer-logo{
+        margin-bottom: 3rem;
+        height: 100%;
+    }
+    footer .footer-socials{
+        margin-bottom: 2rem;
+    }
   }
 
   @media (min-width: 279px) and (max-width: 359px) {
@@ -877,6 +1071,10 @@ footer .copyright{
         padding: 0 10px;
     }
     .mobile-nav-logo{
+        display: block;
+        z-index: 10;
+    }
+    .mobile-nav-logoinside{
         display: block;
     }
     .hamberger{
@@ -928,10 +1126,10 @@ footer .copyright{
     .firstbuttons button{
         margin-top: 0.5rem;
     }
-    section.freelancer {
+    section.overallsavelife {
         padding-bottom: 5rem;
     }
-    section.freelancer p {
+    section.overallsavelife p {
         margin: 2rem 0.5rem;
     }
     section.contact .card-wrapper {
@@ -952,7 +1150,48 @@ footer .copyright{
     footer {
         padding: 2rem 0.5rem;
     }
+    .freestyle{
+        margin-left: 8%;
+    }
+    .savelifestyle{
+        margin-right: 10%;
+    }
+
+    footer{
+        flex-direction: column;
+    }
     
+    .footermaterial1{
+        align-items: center;
+    }
+    
+    .footermaterial2 {
+        order: 3;
+        margin-top: 0rem;
+    }
+    
+    .footermaterial3 {
+        margin-top: 2rem;
+    }
+    
+    .footer-socials{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .footer-logo-div{
+        color: white;
+        height: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    footer .footer-logo{
+        margin-bottom: 3rem;
+        height: 100%;
+    }
+    footer .footer-socials{
+        margin-bottom: 2rem;
+    }
 
   }
 
